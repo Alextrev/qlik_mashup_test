@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import QlikApp from './qlikApp';
+import QlikApp from './QlikApp';
 
 function App() {
   return (

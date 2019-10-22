@@ -17,7 +17,7 @@ export default class QlikObject extends React.Component {
     this.props.app.getObject(this.props.chartId, this.props.qlikId).then(model => this.setState({ model: model }));
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
+  shouldComponentUpdate(nextProps) {
     return this.props.qlikId !== nextProps.qlikId;
   }
 

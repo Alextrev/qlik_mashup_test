@@ -15,7 +15,7 @@ export default class App extends React.Component {
   }
 
   render() {
-    let content = [];
+    let content = undefined;
     if (this.state.app) {
       content = (
         <div>

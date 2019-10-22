@@ -25,7 +25,7 @@ export default class QlikConnection extends React.Component {
       prefix: '/viewer/',
     };
     require.config({
-      baseUrl: 'https://qlik-amenity.amenityanalytics.com:443/viewer/resources'
+      baseUrl: ( config.isSecure ? "https://" : "http://" ) + config.host + (config.port ? ":" + config.port : "") + config.prefix + "resources"
     });
 
     require(['js/qlik'], (qlik) => {
